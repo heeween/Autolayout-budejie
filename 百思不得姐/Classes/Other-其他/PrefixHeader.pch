@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  微博项目
+//
+//  Created by heew on 15/6/8.
+//  Copyright (c) 2015年 adhx. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#define HYWColr(r,g,b) [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0 ) blue:((b) / 255.0 ) alpha:1]
+#define HYWRandomColor HYWColr(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+#define HYWKeyWindow [UIApplication sharedApplication].keyWindow
+#define HYWScreenBounds [UIScreen mainScreen].bounds
+#define HYWScreenW HYWScreenBounds.size.width
+#define HYWScreenH HYWScreenBounds.size.height
+#define HYWCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+#define HYWPathCache(path) [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:(path)]
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import "UIKit+tools.h"
+#import "HYWConst.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "NSDate+HYWExtension.h"
+#endif
+
+
+#endif
+#ifdef DEBUG
+#define HYWLog(...) NSLog(__VA_ARGS__)
+#else 
+#define HYWLog(...)
+#endif

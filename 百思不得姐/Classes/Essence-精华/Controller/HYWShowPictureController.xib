@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYWShowPictureController">
+            <connections>
+                <outlet property="imageView" destination="0U8-XS-hKW" id="GRY-mX-BLR"/>
+                <outlet property="imageViewCenterYConstraint" destination="C20-DR-6qi" id="EGB-Co-b7p"/>
+                <outlet property="imageviewHeightConstraint" destination="axJ-NF-inL" id="NxG-7H-7BW"/>
+                <outlet property="imageviewWidthConstraint" destination="44Z-te-JiV" id="D1Y-AP-s27"/>
+                <outlet property="progressView" destination="W6j-jB-Gcc" id="F0N-SN-u4n"/>
+                <outlet property="scrollView" destination="ffZ-6G-j07" id="20g-pX-J1y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-6G-j07">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0U8-XS-hKW">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="600" id="44Z-te-JiV"/>
+                                <constraint firstAttribute="height" constant="600" id="axJ-NF-inL"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="hlC-re-7i6" appends="YES" id="03v-bD-4X1"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0U8-XS-hKW" firstAttribute="top" secondItem="ffZ-6G-j07" secondAttribute="top" priority="750" id="0qB-hK-qGB"/>
+                        <constraint firstAttribute="trailing" secondItem="0U8-XS-hKW" secondAttribute="trailing" id="1HG-bQ-sz5"/>
+                        <constraint firstAttribute="bottom" secondItem="0U8-XS-hKW" secondAttribute="bottom" priority="250" id="A1N-uF-YFs"/>
+                        <constraint firstAttribute="centerY" secondItem="0U8-XS-hKW" secondAttribute="centerY" id="C20-DR-6qi"/>
+                        <constraint firstItem="0U8-XS-hKW" firstAttribute="leading" secondItem="ffZ-6G-j07" secondAttribute="leading" id="WPo-ib-FiU"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENq-Um-Bef" userLabel="返回">
+                    <rect key="frame" x="15" y="40" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Sfz-JK-GKl"/>
+                        <constraint firstAttribute="width" constant="35" id="Xl9-Rh-OzC"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="oa3-q0-k8c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzk-vV-YTb" userLabel="转发">
+                    <rect key="frame" x="425" y="555" width="70" height="25"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="54h-Un-lx5"/>
+                        <constraint firstAttribute="height" constant="25" id="neP-XI-Wee"/>
+                    </constraints>
+                    <state key="normal" title="转发">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yv-U8-qmd">
+                    <rect key="frame" x="510" y="555" width="70" height="25"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="S0b-gg-Srr"/>
+                        <constraint firstAttribute="width" constant="70" id="ekA-Kb-Qps"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="save" destination="-1" eventType="touchUpInside" id="nJT-Ib-3Fe"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6j-jB-Gcc" userLabel="进度条" customClass="HYWProgressView">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="FUK-EC-VeJ"/>
+                        <constraint firstAttribute="height" constant="100" id="H43-pv-Hbu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="W6j-jB-Gcc" secondAttribute="centerY" id="2mG-1o-fNo"/>
+                <constraint firstItem="ffZ-6G-j07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3ZP-9e-oic"/>
+                <constraint firstAttribute="bottom" secondItem="ffZ-6G-j07" secondAttribute="bottom" id="7dK-3Z-Cfp"/>
+                <constraint firstAttribute="centerX" secondItem="ffZ-6G-j07" secondAttribute="centerX" id="7zc-9B-Qli"/>
+                <constraint firstAttribute="trailing" secondItem="ffZ-6G-j07" secondAttribute="trailing" id="Cll-pa-ras"/>
+                <constraint firstItem="5yv-U8-qmd" firstAttribute="leading" secondItem="Vzk-vV-YTb" secondAttribute="trailing" constant="15" id="Djy-UE-6Ch"/>
+                <constraint firstAttribute="bottom" secondItem="ffZ-6G-j07" secondAttribute="bottom" id="IBf-uH-qRj"/>
+                <constraint firstItem="ENq-Um-Bef" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="IvJ-Sa-Ung"/>
+                <constraint firstItem="ENq-Um-Bef" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="NUX-xd-pWC"/>
+                <constraint firstAttribute="bottom" secondItem="ffZ-6G-j07" secondAttribute="bottom" id="aPj-d8-VAH"/>
+                <constraint firstAttribute="trailing" secondItem="5yv-U8-qmd" secondAttribute="trailing" constant="20" id="bfz-6d-LdL"/>
+                <constraint firstItem="ffZ-6G-j07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" priority="750" id="hCt-Q0-Mgz"/>
+                <constraint firstAttribute="centerX" secondItem="W6j-jB-Gcc" secondAttribute="centerX" id="kgr-Sw-Imf"/>
+                <constraint firstItem="ffZ-6G-j07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lcl-2L-zGr"/>
+                <constraint firstItem="ffZ-6G-j07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pwL-sh-L0E"/>
+                <constraint firstAttribute="bottom" secondItem="5yv-U8-qmd" secondAttribute="bottom" constant="20" id="qVk-PV-VkQ"/>
+                <constraint firstAttribute="bottom" secondItem="Vzk-vV-YTb" secondAttribute="bottom" constant="20" id="qvy-2J-UQo"/>
+                <constraint firstAttribute="centerY" secondItem="ffZ-6G-j07" secondAttribute="centerY" id="yps-zp-jXB"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3ZP-9e-oic"/>
+                    <exclude reference="7dK-3Z-Cfp"/>
+                    <exclude reference="7zc-9B-Qli"/>
+                    <exclude reference="IBf-uH-qRj"/>
+                    <exclude reference="hCt-Q0-Mgz"/>
+                    <exclude reference="yps-zp-jXB"/>
+                </mask>
+            </variation>
+        </view>
+        <tapGestureRecognizer id="hlC-re-7i6">
+            <connections>
+                <action selector="back" destination="-1" id="Pyu-eG-WjB"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

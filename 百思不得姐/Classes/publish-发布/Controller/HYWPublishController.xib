@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYWPublishController">
+            <connections>
+                <outlet property="buttonContainer" destination="9OB-93-Op0" id="eh4-dz-9ds"/>
+                <outlet property="sloganView" destination="S4r-W5-dqN" id="eKi-G2-flG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7qU-Sr-8Ey">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OB-93-Op0" userLabel="按钮框">
+                    <rect key="frame" x="0.0" y="190" width="600" height="220"/>
+                    <subviews>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6H-rN-CZE" customClass="HYWVerticalButton">
+                            <rect key="frame" x="30" y="0.0" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="aDC-fy-kJR"/>
+                                <constraint firstAttribute="width" constant="72" id="cgl-m8-gU4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="发视频" image="publish-video">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcr-om-eea" customClass="HYWVerticalButton">
+                            <rect key="frame" x="264" y="0.0" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="ADa-XV-Ywd"/>
+                                <constraint firstAttribute="height" constant="110" id="Hx3-Ev-f2y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="发图片" image="publish-picture">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0Q-3d-5L2" customClass="HYWVerticalButton">
+                            <rect key="frame" x="498" y="0.0" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="9Uw-Ai-5CM"/>
+                                <constraint firstAttribute="width" constant="72" id="bXr-a8-jrq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="发文字" image="publish-text">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-b0-dPx" customClass="HYWVerticalButton">
+                            <rect key="frame" x="30" y="110" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="Yte-rw-b0y"/>
+                                <constraint firstAttribute="width" constant="72" id="sB0-S7-lKV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="发声音" image="publish-audio">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiV-FM-Qca" customClass="HYWVerticalButton">
+                            <rect key="frame" x="264" y="110" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="Q9W-Qr-rBM"/>
+                                <constraint firstAttribute="height" constant="110" id="okJ-qZ-9rO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="审帖" image="publish-review">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-xn-Y1b" customClass="HYWVerticalButton">
+                            <rect key="frame" x="498" y="110" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="0hx-V1-nbU"/>
+                                <constraint firstAttribute="width" constant="72" id="9aP-TE-aci"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="离线下载" image="publish-offline">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="d6H-rN-CZE" firstAttribute="leading" secondItem="9OB-93-Op0" secondAttribute="leading" constant="30" id="8cT-j9-F7h"/>
+                        <constraint firstItem="HiV-FM-Qca" firstAttribute="top" secondItem="Tcr-om-eea" secondAttribute="bottom" id="BCw-tt-XfS"/>
+                        <constraint firstItem="c5X-xn-Y1b" firstAttribute="top" secondItem="Z0Q-3d-5L2" secondAttribute="bottom" id="IPC-rf-76o"/>
+                        <constraint firstAttribute="height" constant="220" id="JRk-kj-aaN"/>
+                        <constraint firstAttribute="trailing" secondItem="c5X-xn-Y1b" secondAttribute="trailing" constant="30" id="LFT-MU-lZZ"/>
+                        <constraint firstItem="Z0Q-3d-5L2" firstAttribute="top" secondItem="9OB-93-Op0" secondAttribute="top" id="QbO-fX-d8u"/>
+                        <constraint firstItem="d6H-rN-CZE" firstAttribute="top" secondItem="9OB-93-Op0" secondAttribute="top" id="UU3-uS-hwM"/>
+                        <constraint firstItem="Z0Q-3d-5L2" firstAttribute="leading" secondItem="Tcr-om-eea" secondAttribute="trailing" constant="110" id="VXj-Ej-c5U"/>
+                        <constraint firstItem="c5X-xn-Y1b" firstAttribute="leading" secondItem="HiV-FM-Qca" secondAttribute="trailing" constant="110" id="YJX-wQ-gYR"/>
+                        <constraint firstItem="HiV-FM-Qca" firstAttribute="leading" secondItem="qxU-b0-dPx" secondAttribute="trailing" constant="110" id="fSd-08-so5"/>
+                        <constraint firstAttribute="centerX" secondItem="Tcr-om-eea" secondAttribute="centerX" id="gNX-Zk-7BO"/>
+                        <constraint firstAttribute="trailing" secondItem="Z0Q-3d-5L2" secondAttribute="trailing" constant="30" id="gxd-1l-Wyj"/>
+                        <constraint firstItem="qxU-b0-dPx" firstAttribute="leading" secondItem="9OB-93-Op0" secondAttribute="leading" constant="30" id="rDp-Wr-tmd"/>
+                        <constraint firstItem="qxU-b0-dPx" firstAttribute="top" secondItem="d6H-rN-CZE" secondAttribute="bottom" id="xFF-iN-kxa"/>
+                        <constraint firstAttribute="centerX" secondItem="HiV-FM-Qca" secondAttribute="centerX" id="y75-sB-au0"/>
+                        <constraint firstItem="Tcr-om-eea" firstAttribute="leading" secondItem="d6H-rN-CZE" secondAttribute="trailing" constant="110" id="yPD-uD-IMm"/>
+                        <constraint firstItem="Tcr-om-eea" firstAttribute="top" secondItem="9OB-93-Op0" secondAttribute="top" id="zqe-Ds-UV2"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="yPD-uD-IMm"/>
+                            <exclude reference="fSd-08-so5"/>
+                            <exclude reference="VXj-Ej-c5U"/>
+                            <exclude reference="YJX-wQ-gYR"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8g-II-Xj0">
+                    <rect key="frame" x="156" y="540" width="289" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="289" id="4Ah-2Q-dM2"/>
+                        <constraint firstAttribute="height" constant="40" id="8lO-bG-Gdu"/>
+                    </constraints>
+                    <state key="normal" image="shareButtonCancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="shareButtonCancelClick"/>
+                    <connections>
+                        <action selector="cancelButtonClick:" destination="-1" eventType="touchUpInside" id="uyp-Sv-kjD"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-W5-dqN">
+                    <rect key="frame" x="199" y="20" width="202" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="6PG-Xm-IEl"/>
+                        <constraint firstAttribute="width" constant="202" id="FYe-fV-F8H"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7qU-Sr-8Ey" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2om-uP-54U"/>
+                <constraint firstAttribute="centerX" secondItem="S8g-II-Xj0" secondAttribute="centerX" id="BdN-WV-99x"/>
+                <constraint firstItem="7qU-Sr-8Ey" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HRD-Qu-bOm"/>
+                <constraint firstAttribute="centerX" secondItem="S4r-W5-dqN" secondAttribute="centerX" id="Kzt-Ql-7uN"/>
+                <constraint firstAttribute="bottom" secondItem="7qU-Sr-8Ey" secondAttribute="bottom" id="Nft-JW-Vb4"/>
+                <constraint firstAttribute="bottom" secondItem="S8g-II-Xj0" secondAttribute="bottom" constant="20" id="QPw-nR-m9t"/>
+                <constraint firstAttribute="trailing" secondItem="9OB-93-Op0" secondAttribute="trailing" id="b27-ID-LVG"/>
+                <constraint firstItem="S4r-W5-dqN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="jwx-Dx-xDq"/>
+                <constraint firstItem="9OB-93-Op0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oHJ-Bi-ef9"/>
+                <constraint firstAttribute="trailing" secondItem="7qU-Sr-8Ey" secondAttribute="trailing" id="uWg-KT-yJh"/>
+                <constraint firstAttribute="centerY" secondItem="9OB-93-Op0" secondAttribute="centerY" id="vmR-BW-Xs4"/>
+            </constraints>
+            <point key="canvasLocation" x="-53" y="234"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_slogan" width="202" height="20"/>
+        <image name="publish-audio" width="72" height="72"/>
+        <image name="publish-offline" width="72" height="72"/>
+        <image name="publish-picture" width="72" height="72"/>
+        <image name="publish-review" width="72" height="72"/>
+        <image name="publish-text" width="72" height="72"/>
+        <image name="publish-video" width="72" height="72"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
+    </resources>
+</document>

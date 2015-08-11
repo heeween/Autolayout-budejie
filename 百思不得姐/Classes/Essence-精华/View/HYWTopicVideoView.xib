@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="arI-0P-JJS" customClass="HYWTopicVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="278"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nSM-LT-pqu" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="422" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Kra-hs-yrP"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Byv-jJ-RUT" userLabel="图片">
+                    <rect key="frame" x="0.0" y="0.0" width="422" height="278"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="zhz-40-oGQ" appends="YES" id="0Qp-BR-2el"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aX-NQ-zyr" userLabel="进度条控件" customClass="HYWProgressView">
+                    <rect key="frame" x="161" y="89" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="fRR-cP-dZ4"/>
+                        <constraint firstAttribute="width" constant="100" id="rCD-g7-LFs"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuD-lw-pPj" userLabel="播放次数">
+                    <rect key="frame" x="386" y="0.0" width="36" height="17"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7C5-28-5Gt" userLabel="播放时长">
+                    <rect key="frame" x="386" y="261" width="36" height="17"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeX-8T-dfj">
+                    <rect key="frame" x="176" y="104" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="Dhu-MC-4aa"/>
+                        <constraint firstAttribute="height" constant="71" id="U1y-pB-ldq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="video-play">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="nSM-LT-pqu" firstAttribute="top" secondItem="arI-0P-JJS" secondAttribute="top" constant="20" id="7ve-e0-CAU"/>
+                <constraint firstItem="Byv-jJ-RUT" firstAttribute="leading" secondItem="arI-0P-JJS" secondAttribute="leading" id="BZd-cL-1B0"/>
+                <constraint firstAttribute="centerY" secondItem="oeX-8T-dfj" secondAttribute="centerY" id="EjK-Qu-qUt"/>
+                <constraint firstAttribute="centerX" secondItem="9aX-NQ-zyr" secondAttribute="centerX" id="LO0-w5-9cy"/>
+                <constraint firstItem="nSM-LT-pqu" firstAttribute="leading" secondItem="arI-0P-JJS" secondAttribute="leading" id="QA7-Dw-DMf"/>
+                <constraint firstAttribute="trailing" secondItem="nSM-LT-pqu" secondAttribute="trailing" id="QbE-Hk-JeY"/>
+                <constraint firstAttribute="centerY" secondItem="9aX-NQ-zyr" secondAttribute="centerY" id="R7T-4j-Xym"/>
+                <constraint firstItem="Byv-jJ-RUT" firstAttribute="top" secondItem="arI-0P-JJS" secondAttribute="top" id="Zk9-UV-S2D"/>
+                <constraint firstItem="HuD-lw-pPj" firstAttribute="top" secondItem="arI-0P-JJS" secondAttribute="top" id="cUM-XH-8b5"/>
+                <constraint firstAttribute="trailing" secondItem="Byv-jJ-RUT" secondAttribute="trailing" id="ct2-Qc-5YM"/>
+                <constraint firstAttribute="trailing" secondItem="HuD-lw-pPj" secondAttribute="trailing" id="eu1-Do-7TE"/>
+                <constraint firstAttribute="trailing" secondItem="7C5-28-5Gt" secondAttribute="trailing" id="hXk-jx-Nsz"/>
+                <constraint firstAttribute="centerX" secondItem="oeX-8T-dfj" secondAttribute="centerX" id="lVT-Dw-ZEV"/>
+                <constraint firstAttribute="bottom" secondItem="Byv-jJ-RUT" secondAttribute="bottom" id="w6V-Qv-LAM"/>
+                <constraint firstAttribute="bottom" secondItem="7C5-28-5Gt" secondAttribute="bottom" id="wJz-IY-Lty"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="Byv-jJ-RUT" id="egq-Bi-RK0"/>
+                <outlet property="playCountLabel" destination="HuD-lw-pPj" id="bwT-Xg-sag"/>
+                <outlet property="playTimeLabel" destination="7C5-28-5Gt" id="xFZ-XQ-rbF"/>
+                <outlet property="progressView" destination="9aX-NQ-zyr" id="Nmq-mZ-ZNK"/>
+            </connections>
+            <point key="canvasLocation" x="127" y="386"/>
+        </view>
+        <tapGestureRecognizer id="zhz-40-oGQ">
+            <connections>
+                <action selector="showPicture" destination="arI-0P-JJS" id="tEo-JB-5kP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>
