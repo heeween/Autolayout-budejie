@@ -84,7 +84,7 @@
                 <outlet property="playTimeLabel" destination="7C5-28-5Gt" id="xFZ-XQ-rbF"/>
                 <outlet property="progressView" destination="9aX-NQ-zyr" id="Nmq-mZ-ZNK"/>
             </connections>
-            <point key="canvasLocation" x="127" y="386"/>
+            <point key="canvasLocation" x="87" y="510"/>
         </view>
         <tapGestureRecognizer id="zhz-40-oGQ">
             <connections>
